@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg-dark px-3">
+  <div class="container-fluid flex-wrap">
+    <a href="#" class="d-flex align-items-center text-decoration-none mb-2 mb-md-0">
+        <i class="bi bi-house-fill text-primary fs-2 me-2"></i>
+        <h2 class="text-white mb-0">Home</h2>
+    </a>
+    <a routerLink="/add-friend" class="btn btn-outline-primary">
+     👤 New Friend
+    </a>
+    
+  </div>
+</nav>
+
+
+
+<div class="container mt-4">
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle text-nowrap">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Department</th>
+          <th>Email</th>
+          <th>Country</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let friend of friends$ | async">
+          <td>{{ friend.id }}</td>
+          <td>{{ friend.firstName }}</td>
+          <td>{{ friend.lastName }}</td>
+          <td>{{ friend.department }}</td>
+          <td>{{ friend.email }}</td>
+          <td>{{ friend.country }}</td>
+          <td>
+            <div class="d-flex flex-wrap gap-2">
+              <button type="button"  class="btn btn-primary btn-sm">Details</button>
+              <button type="button" class="btn btn-warning btn-sm">Edit</button>
+              <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

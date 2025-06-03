@@ -1,0 +1,114 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px; 
+  text-decoration: none;
+}
+
+.details-btn {
+  background-color: #17a2b8;
+}
+
+.details-btn:hover {
+  background-color: #138496;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+.button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer; 
+  display: flex;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.new-friend-btn {
+  float: right;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.new-friend-btn:hover {
+  background-color: #0056b3;
+}
+ 
+.text-primary{
+  color: white !important  ;
+}
+
+.bi-house-fill{
+  position: absolute;
+}
+
+.text-white{
+  padding-left: 40px;
+  
+}
+
+.btn-warning{
+  width: 70px;
+}
+
+.btn-danger{
+  width: 70px;
+}
+
+.btn-primary{
+  width: 70px;
+}
+
+.navbar-dark{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

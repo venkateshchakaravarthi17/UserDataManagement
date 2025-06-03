@@ -1,0 +1,53 @@
+.friend-form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.friend-form label {
+  text-align: right;
+}
+
+.friend-form input {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: #ffffff !important;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #00acc1;
+  border: 1px solid #000;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008b9a;
+}
+ h1{
+  text-align: center;
+ }
+
+.text-primary {
+  color: white !important;
+}
+
+.navbar-dark{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

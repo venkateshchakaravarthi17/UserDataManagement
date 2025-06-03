@@ -1,0 +1,63 @@
+
+<nav class="navbar navbar-dark bg-dark px-3">
+  <div class="container-fluid">
+    <a href="#" class="d-flex align-items-center text-decoration-none">
+        <i class="bi bi-house-fill text-primary fs-2 me-2"></i>
+        <h2 class="text-white mb-0">Home</h2>
+    </a>
+    
+    
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Add New Friend</h2>
+  <form class="mx-auto" style="max-width: 500px;">
+    
+    
+<form [formGroup]="friendForm" (ngSubmit)="onSubmit()" class="mx-auto" style="max-width: 500px;">
+  <div class="mb-3">
+    <label for="firstName" class="form-label">First Name:</label>
+    <input type="text" class="form-control" id="firstName" formControlName="firstName">
+  </div>
+
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Last Name:</label>
+    <input type="text" class="form-control" id="lastName" formControlName="lastName">
+  </div>
+
+  <div class="mb-3">
+    <label for="department" class="form-label">Department:</label>
+    <select class="form-select" id="department" formControlName="department">
+      <option selected disabled value="">Choose Department</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+      <option value="Mech">Mech</option>
+      <option value="CSE">CSE</option>
+      <option value="AE">AE</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" formControlName="email">
+  </div>
+
+  <div class="mb-3">
+    <label for="country" class="form-label">Country:</label>
+    <select class="form-select" id="country" formControlName="country">
+      <option selected disabled value="">Choose Country</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Japan">Japan</option>
+      <option value="Canada">Canada</option>
+    </select>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-info px-4">Add Friend</button>
+  </div>
+</form>
+
+
